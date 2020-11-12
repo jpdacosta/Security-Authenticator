@@ -8,9 +8,7 @@ class DataCollector:
         return userData
 
 
-
+from DataCollector import DataCollector
 datCol = DataCollector()
 userData = datCol.collectUserInput
-
-for items in userData:
-    print("Username " + items["username'"] + " Password: " + items["Password"])
+print("Username: " + userData["Username"] + " Password: " + userData["Password"])
